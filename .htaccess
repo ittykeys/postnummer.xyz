@@ -26,6 +26,7 @@ Header set X-Robots-Tag "all"
 RewriteEngine On
 RewriteRule .* - [E=YEAR:%{TIME_YEAR}]
 RewriteRule ^favicon\.ico$ /img/favicon.ico [L]
+RewriteRule ^google6eba66c33878e8bb.html$ /html/google6eba66c33878e8bb.html [L]
 
 # Serve different versions based on language
 RewriteEngine On
