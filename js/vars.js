@@ -1,0 +1,9 @@
+nuerr = '5 siffor';
+ltext = 'Laddar...';
+nerr = 'Nätverksfel';
+nores = 'Inget resultat.';
+state = 'Län';
+county = 'Kommun';
+lat = 'Latitud';
+long = 'Longitud';
+err = 'Fel';

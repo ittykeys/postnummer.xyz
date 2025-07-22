@@ -1,0 +1,11 @@
+/* TEAM */
+	Author: IttyKeys
+	Contact: peter@peternilsson.info
+	Twitter: @ittykeys
+	Location: Helsingborg, Sweden
+    Site: https://peternilsson.info
+
+/* SITE */
+    Standards: PHP
+    Components: Apache, PHP
+    Software: VSCodium

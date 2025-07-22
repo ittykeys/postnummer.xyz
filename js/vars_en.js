@@ -1,0 +1,9 @@
+nuerr = '5 numbers';
+ltext = 'Loading...';
+nerr = 'Network error';
+nores = 'No result.';
+state = 'Region';
+county = 'County';
+lat = 'Latitude';
+long = 'Longitude';
+err = 'Error';

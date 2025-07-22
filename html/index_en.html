@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <title>postnummer.xyz - Look up zip codes</title>
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','<!--#echo var="TM_ID" -->');
+        </script>
+        <script async src='https://www.googletagmanager.com/gtag/js?id=<!--#echo var="GA_ID" -->'></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '<!--#echo var="GA_ID" -->');
+        </script>
+        <meta name="google-site-verification" content="" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Cache-control" content="public" />
+		<meta name="description" content="postnummer.xyz - Look up zip codes for city and more" />
+		<meta name="keywords" content="postnummer.xyz, zip code, city, region, county, latitude, longitude" />
+		<meta name="author" content="Peter Nilsson" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="robots" content= "index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <meta name="theme-color" content="#1f1f22">
+		<link rel="canonical" href="https://<!--#echo var="SERVER_NAME" -->" />
+		<link rel="stylesheet" type="text/css" href="../css/vars.css" />
+		<link rel="stylesheet" type="text/css" href="../css/css.css" />
+		<link rel="apple-touch-icon" href="../img/logo.png"/>
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+		<base href="https://<!--#echo var="SERVER_NAME" -->" />
+        </head>
+    <body>
+        <noscript>
+            <iframe src='https://www.googletagmanager.com/ns.html?id=<!--#echo var="TM_ID" -->'
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <a href="sv"><img id="langswitch" src="../img/swe.svg" alt="Sveriges flagga" title="Byt till Svenska"></a>
+        <div id="content">
+            <noscript>
+                <p>JavaScript is disabled. Activate JavaScript in your browser to continue.</p>
+            </noscript>
+            <h1 style="display: none;">postnummer.xyz</h1>
+            <h1>Look up zip code</h1>
+            <div id="inputs">
+                <input type="tel" inputmode="numeric" pattern="[0-9\s]*" id="zipInput" placeholder="Eg. 112 23" />
+                <button id="lookupBtn">Look up</button>
+                <span id="inputerror">5 numbers</span>
+            </div>
+            <div id="output"></div>
+        </div>
+        <p class="hide">postnummer.xyz - Look up zip codes</p>
+        <script><!--#include virtual="../js/vars_en.js"--></script>
+        <script><!--#include virtual="../js/js.js"--></script>
+        <!--#include virtual="footer.html"-->
+    </body>
+</html>
