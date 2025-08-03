@@ -28,6 +28,7 @@ function doLookup(zip) {
                         <p><strong>${state}: </strong> ${result.state} (${result.state_code})</p>
                         <p><strong>${lat}: </strong> Ca. ${result.latitude}</p>
                         <p><strong>${long}: </strong> Ca. ${result.longitude}</p>
+                        <p>^ <a id='maplink' target='_blank' href='https://www.openstreetmap.org/search?lat=${result.latitude}&lon=${result.longitude}'>OpenStreetMap</a></p>
                     `;
                     zipInput.value = '';
                 })

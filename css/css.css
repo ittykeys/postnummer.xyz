@@ -131,3 +131,9 @@ footer {
 } #langswitch:hover {
 	filter: saturate(500%);
 }
+
+#maplink {
+    color: #73b7ff;
+} #maplink:hover {
+    text-decoration: underline;
+}
