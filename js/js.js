@@ -38,7 +38,11 @@ function doLookup(zip) {
         },200);
     });
 }
-lookupBtn.addEventListener('click', doLookup);
+lookupBtn.addEventListener('click', () => {
+    const zipInput = document.getElementById('zipInput');
+    const zip = zipInput.value.replace(/\s+/g, '');
+    doLookup(zip);
+});
 zipInput.addEventListener('keydown', (e) => {
     const zipInput = document.getElementById('zipInput');
     zip = zipInput.value.replace(/\s+/g, '');
