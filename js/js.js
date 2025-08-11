@@ -38,30 +38,29 @@ function doLookup(zip) {
         },200);
     });
 }
-lookupBtn.addEventListener('click', () => {
-    const zipInput = document.getElementById('zipInput');
+function validateAndLookup() {
     const zip = zipInput.value.replace(/\s+/g, '');
+    if (!zip || !/^\d{5}$/.test(zip)) {
+        zipInput.style.boxShadow = 'inset 0 0 0 0.15em red';
+        inputerror.innerHTML = nuerr;
+        setTimeout(() => {
+            zipInput.style.boxShadow = 'none';
+        }, 500);
+        zipInput.addEventListener('input', () => {
+            inputerror.innerHTML = '';
+        }, { once: true });
+        return false;
+    }
     doLookup(zip);
-});
+    if (isMobile()) {
+        zipInput.blur();
+    }
+    return true;
+}
+lookupBtn.addEventListener('click', validateAndLookup);
 zipInput.addEventListener('keydown', (e) => {
-    const zipInput = document.getElementById('zipInput');
-    zip = zipInput.value.replace(/\s+/g, '');
     if (e.key === 'Enter') {
-        if (!zip || !/^\d{5}$/.test(zip)) {
-            zipInput.style.boxShadow = 'inset 0 0 0 0.15em red';
-            inputerror.innerHTML = nuerr;
-            setTimeout(() => {
-                zipInput.style.boxShadow = 'none';
-            },500);
-            zipInput.addEventListener('input', () => {
-                inputerror.innerHTML = '';
-            });
-            return;
-        }
-        doLookup(zip);
-        if (isMobile()) {
-            zipInput.blur();
-        }
+        validateAndLookup();
     }
 });
 window.addEventListener('load', () => {
